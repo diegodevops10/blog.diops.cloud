@@ -3,10 +3,10 @@ WORKDIR /src
 
 COPY . /src
 
-RUN hugo --minify
+RUN hugo --minify && ls -la
 
 FROM nginx:alpine
-RUN rm -rf /usr/share/nginx/html/*
+RUN rm -rf /usr/share/nginx/html/* && ls -la /usr/share/nginx/html/
 COPY --from=build /src/public /usr/share/nginx/html
 
 EXPOSE 80
