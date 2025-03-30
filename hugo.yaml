@@ -44,26 +44,26 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/image/favicon.ico"
+    favicon16x16: "/image/favicon-16x16.png"
+    favicon32x32: "/image/favicon-32x32.png"
+    apple_touch_icon: "/image/apple-touch-icon.png"
+    safari_pinned_tab: "/image/apple-touch-icon.png"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: "/image/apple-touch-icon.png"
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
     title: Diego Santana
-    subtitle: "SRE | DevOps | Kubernetes Kubestronaut | Cloud Native"
-    imageUrl: "https://i.imgur.com/F4oOv2s.png"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    subtitle: "Hi! I'm Diego, SRE/DevOps Engineer passionate about containers, Kubernetes & Cloud Native!"
+    imageUrl: "/image/diegopicture-anime.png"
+    imageWidth: 300
+    imageHeight: 300
+    imageTitle: My photo
     buttons:
       - name: Posts
         url: posts
@@ -71,11 +71,6 @@ params:
         url: tags
       - name: About
         url: about
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Hi! Welcome to my blog <3"
-    Content: I am Diego, SRE/DevOps Engineer passionate about containers, Kubernetes & Cloud Native!
 
   socialIcons:
     - name: x
@@ -96,12 +91,12 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/blog.diops.cloud/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 

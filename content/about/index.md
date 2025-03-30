@@ -1,17 +1,16 @@
 ---
-title: "Como Diego é muito lindooo"
+title: "A liitle bit about me"
 date: 2025-03-29T10:00:00
 draft: false
 cover:
-  image: "/image/diegopicture-anime.png"
+  image: "fotodiegoresized.jpeg"
   alt: "A little bit about me"
-  caption: "Legenda opcional"
-  #relative: false
-  #responsiveImages: true
+  caption: "Just an old photo :)"
+  relative: false
+  responsiveImages: true
   hidden: false
 ---
 
-# Hi, I'm Diego
+# Introduction
 
-DevOps Engineer / SRE Lindo
-
+Work in progress
