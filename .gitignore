@@ -4,3 +4,4 @@ public
 # Ignore resource folder
 resources
 
+.hugo_build.lock
