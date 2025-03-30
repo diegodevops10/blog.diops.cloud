@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>diops.cloud</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on diops.cloud</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 29 Mar 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como Diego é muito lindooo</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 29 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;hi-im-diego&#34;&gt;Hi, I&amp;rsquo;m Diego&lt;/h1&gt;
+&lt;p&gt;DevOps Engineer / SRE Lindo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Como Diego é muito lindooo</title>
+      <link>http://localhost:1313/posts/como-diego-e-lindo/</link>
+      <pubDate>Sat, 29 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/como-diego-e-lindo/</guid>
+      <description>&lt;h1 id=&#34;hi-im-diego&#34;&gt;Hi, I&amp;rsquo;m Diego&lt;/h1&gt;
+&lt;p&gt;DevOps Engineer / SRE Lindo&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/image/diegopicture-anime.png&#34;/&gt; 
+&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/mypage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/mypage/</guid>
+      <description>&lt;h1 id=&#34;my-page&#34;&gt;My page&lt;/h1&gt;
+&lt;p&gt;hello world!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
