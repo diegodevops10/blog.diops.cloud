@@ -1,4 +1,5 @@
-baseURL: "https://examplesite.com/"
+baseURL: "https://blog.diops.cloud/"
+# baseURL: "http://localhost:8080/"
 title: diops.cloud
 pagination:
   pagerSize: 5
