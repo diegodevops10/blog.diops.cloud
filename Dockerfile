@@ -22,7 +22,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy HTML from previous build into the Workdir.
-COPY --from=build /opt/HugoApp/public .
+COPY --from=build /opt/HugoApp/public /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80/tcp
