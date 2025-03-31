@@ -1,13 +1,25 @@
-FROM hugomods/hugo:ci-0.145.0 AS build
-WORKDIR /opt
+# Stage 1
+FROM alpine:latest AS build
 
+# Install the Hugo go app.
+RUN apk add --update hugo
+
+WORKDIR /opt/HugoApp
+
+# Copy Hugo config into the container Workdir.
 COPY . .
-RUN hugo --minify
 
-FROM nginx:alpine
-# RUN rm -rf /usr/share/nginx/html/* && ls -la /usr/share/nginx/html/
+# Run Hugo in the Workdir to generate HTML.
+RUN hugo 
+
+# Stage 2
+FROM nginx:1.25-alpine
+
+# Set workdir to the NGINX default dir.
 WORKDIR /usr/share/nginx/html
-COPY --from=build /opt/public .
-RUN ls -la /usr/share/nginx/html
 
-EXPOSE 80
+# Copy HTML from previous build into the Workdir.
+COPY --from=build /opt/HugoApp/public .
+
+# Expose port 80
+EXPOSE 80/tcp
