@@ -18,6 +18,9 @@ FROM nginx:1.25-alpine
 # Set workdir to the NGINX default dir.
 WORKDIR /usr/share/nginx/html
 
+# Remove old files
+RUN rm -rf /usr/share/nginx/html/*
+
 # Copy HTML from previous build into the Workdir.
 COPY --from=build /opt/HugoApp/public .
 
